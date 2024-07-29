@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <form>
+        <div class="group">
+          <p>Сумма кредиту</p>
+          <label for="loanSum">
+            <input type="number" id="loanSum" />
+          </label>
+          <label for="loanSumSlider">
+            <input type="range" value="0" id="loanSumSlider" />
+          </label>
+        </div>
+        <div class="group">
+          <p>Період погашення</p>
+          <label for="repayment">
+            <input type="number" id="repayment" />
+          </label>
+          <label for="repaymentSlider">
+            <input type="range" value="0" id="repaymentSlider" />
+          </label>
+        </div>
+        <input type="submit" id="getLoan" value="Отримати кредит" disabled />
+      </form>
+      <div class="result"></div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
